@@ -1,0 +1,22 @@
+{
+  "name": "github_actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/immint023/github_actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/immint023/github_actions/issues"
+  },
+  "homepage": "https://github.com/immint023/github_actions#readme",
+  "dependencies": {
+    "react": "^16.10.2"
+  }
+}
