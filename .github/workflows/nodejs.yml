@@ -1,7 +1,9 @@
 name: Greeting from Mona
 
-on: pull_request
-
+on: 
+  push:
+    branches: 
+      - master
 jobs:
   my-job:
     name: My Job
