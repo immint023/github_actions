@@ -14,6 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Print a greeting
+        if: github.action == 'closed' && github.pull_request.merged == 'true'
         run: |
           npm install
           echo "hihi"
