@@ -1,7 +1,10 @@
 name: Greeting from Mona
 
 on:
-  - push
+  pull_request:
+    branches:
+      - master
+    types: [closed]
 
 jobs:
   my-job:
@@ -14,7 +17,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Print a greeting
-        if: github.event.pull_request.merged == true
         run: |
           npm install
           echo "hihi"
